@@ -1,0 +1,35 @@
+{
+
+  "manifest_version": 2,
+  "name": "BetterSearch (Consumer Preview)",
+  "version": "0.7",
+
+  "description": "Enable the BetterSearch search engine for Firefox — warning: BetterSearch is still in development and not released for now. This addon can help beta-testers to test if BetterSearch and the integration with Firefox are working correctly. THIS ADDON ISN'T INTENDED FOR DAILY USE !",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://better-search.000webhostapp.com/*"],
+      "js": ["integration.js"]
+    }
+  ],
+  
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "BetterSearch",
+      "search_url": "https://better-search.000webhostapp.com/api/quiet/?q={searchTerms}&lang=auto&region=ww",
+      "keyword": "bs",
+      "favicon_url": "https://better-search.000webhostapp.com/favicon.ico"
+    }
+  },
+  
+  "applications": {
+    "gecko": {
+      "id": "bettersearch@minteck-projects.net"
+    }
+  }
+
+}

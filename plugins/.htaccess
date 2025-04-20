@@ -1,0 +1,7 @@
+<Files header.php>
+    Deny from All
+</Files>
+
+<Files everywhere.php>
+    Deny from All
+</Files>

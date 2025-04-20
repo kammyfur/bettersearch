@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+[st-t=""] {
+    background: rgba(0, 132, 255, 0.397);
+    min-width: 30%;
+}
+
+[st-r=""] {
+    background: rgba(119, 119, 119, 0.397);
+}
+
+[st-s=""] {
+    background: rgba(0, 132, 255, 0.575);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+[st-h=""] {
+    background: rgba(0, 132, 255, 0.719);
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}

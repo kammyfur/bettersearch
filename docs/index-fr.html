@@ -1,0 +1,34 @@
+<h1><center>BetterSearch:cloud, l'API officiel de BetterSearch</center></h1>
+<code api-background vcenter>bettersearch://</code>
+<p>BetterSearch, et son API BetterSearch:cloud vous permettent une meilleure exploitation de toutes les fonctionnalités et de la technologie que vous propose le moteur de recherche BetterSearch. En plus, il est gratuit !</p>
+<p>Vous pouvez recréer la partie <i><a title="Côté client" def>frontend</a></i> du moteur de recherche selon vos envies, pour par exemple l'intégrer à vos propres services. Pensez quand même à nous faire un peu de publicité, ça nous ferait extrêmement plaisir !</p>
+<p>Voici les adresses que vous devez appeler pour accéder aux différentes fonctions de BetterSearch:cloud. L'API ne retourne pas de JSON, ni de code exploitable par un logiciel facilement. Il retourne un message commençant par <code>ok=</code> si tout s'est bien passé (avec l'URL du résultat après le <code>=</code>), ou autre chose si une erreur s'est produite.</p>
+<h1>Utilisation</h1>
+<h2><code>/api/quiet</code></h2>
+<p>Utilisez cette adresse pour retourner directement une redirection JavaScript vers la page de résultats.</p>
+<h4>Arguments GET</h4>
+<p><b><code>q</code> :</b> Requête à effectuer. Vous pouvez remplacer les espaces par des <code>+</code> si besoin<br>
+<b><code>lang</code> :</b> Identifiant de la langue à utiliser pour la recherche, parmi les langues disponibles sur le client.<br>
+<b><code>region</code> :</b> Identifiant du pays à utiliser pour la recherche, parmi les pays disponibles sur le client.</p>
+<h2><code>/api/search</code></h2>
+<p>Utilisez cette adresse pour retourner le résultat d'une Recherche Classique vers l'adresse cible.</p>
+<h4>Arguments GET</h4>
+<p><b><code>q</code> :</b> Requête à effectuer. Vous pouvez remplacer les espaces par des <code>+</code> si besoin<br>
+<b><code>lang</code> :</b> Identifiant de la langue à utiliser pour la recherche, parmi les langues disponibles sur le client.<br>
+<b><code>region</code> :</b> Identifiant du pays à utiliser pour la recherche, parmi les pays disponibles sur le client.</p>
+<h2><code>/api/search-corp</code></h2>
+<p>Utilisez cette adresse pour retourner le résultat d'une Recherche Entreprise vers l'adresse cible.</p>
+<h4>Arguments GET</h4>
+<p><b><code>q</code> :</b> Requête à effectuer. Vous pouvez remplacer les espaces par des <code>+</code> si besoin<br>
+<b><code>lang</code> :</b> Identifiant de la langue à utiliser pour la recherche, parmi les langues disponibles sur le client.<br>
+<b><code>region</code> :</b> Identifiant du pays à utiliser pour la recherche, parmi les pays disponibles sur le client.</p>
+<h2><code>/api/suggestions</code></h2>
+<p>Utilisez cette adresse pour rechercher les suggestions correspondantes à un terme de recherche. Il s'agit de la seule fonction de l'API à utiliser du JSON car le résultat doit être géré par le client.</p>
+<h4>Arguments GET</h4>
+<p><b><code>q</code> :</b> Termes à rechercher dans la base de données des suggestions<br>
+<b><code>mode</code> :</b> Base de données de suggestions (<code>search</code> ou <code>corps</code>) à utiliser pour la recherche<br>
+<b><code>limit</code> :</b> Nombre maximal de résultat demandés (plus il y en a, plus le retour sera long à venir), 5 par défaut</p>
+<h1>Conditions d'utilisation</h1>
+<p>Les conditions d'utilisation de BetterSearch:cloud qui s'appliquent sont les mêmes que celles de BetterSearch, excepté que vous devez créditer (au moins dans le code de votre <b>client</b>) le fait que vous exploitez l'API du logiciel BetterSearch.</p>
+<p>Si vous êtes une personne gentille et que vous avez envie de soutenir le projet, vous pouvez créditer BetterSearch sur la page d'accueil de votre site, sur la barre de recherche, ou encore sur la page des mentions légales. Il n'y a actuellement aucune obligation pour vous de créditer l'utilisation de BetterSearch dans l'interface, mais obligation de le créditer au moins dans le client.</p>
+<p><b>Note :</b> Cette section risque d'être modifiée dans le futur, venez la consulter régulièrement si vous êtes concerné par cette dernière. Si vous avez des questions concernant les droits d'utilisation de BetterSearch:cloud, envoyez un mail à <b>minteck.projects+rights@gmail.com</b>. Nous vous répondront sous 1 semaine...</p>

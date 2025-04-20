@@ -1,0 +1,119 @@
+@font-face {
+    /* Font file import */
+    src: url("/font/Regular.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: normal;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: normal;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/RegularItalic.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: normal;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: italic;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/Bold.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: bold;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: normal;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/BoldItalic.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: bold;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: italic;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/Bolder.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: bolder;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: normal;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/BolderItalic.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: bolder;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: italic;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/Light.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: lighter;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: normal;
+}
+
+@font-face {
+    /* Font file import */
+    src: url("/font/LightItalic.ttf");
+
+    /* Font family definition */
+    font-family: "SFPro";
+
+    /* Font weight definition: normal, bold, bolder, lighter, ... */
+    font-weight: lighter;
+
+    /* Font style definition: normal, italic, ... */
+    font-style: italic;
+}
+
+* {
+    font-family: "SFPro", "Ubuntu", "Segoe UI", "Roboto", "Google Sans", "Arial", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+code {
+    font-family: "Ubuntu Mono", "Roboto Mono", "Monospace", "Liberation Mono", "Courier New", "Courier", "Lucida Console", monospace
+}

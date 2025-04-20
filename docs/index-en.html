@@ -1,0 +1,34 @@
+<h1><center>BetterSearch:cloud, official BetterSearch API</center></h1>
+<code api-background vcenter>bettersearch://</code>
+<p>BetterSearch, and its API (BetterSearch:cloud) helps you getting the most of all the features and technologies BetterSearch offers you. And the best, it's free!</p>
+<p>You can feel free to recreate the <i><a title="Client-side of a client-server software" def>frontend</a></i> of the search engine to follow your ideas, to for example integrate with your own services. Don't forget to advertise us, this may help us!</p>
+<p>Here's the URLs you need to call to access different features of BetterSearch:cloud. The API don't return JSON, or any exploitable language. It returns a message starting with <code>ok=</code> if everything done successfully (with result URL after <code>=</code>), or anything else if something went wrong.</p>
+<h1>Usage</h1>
+<h2><code>/api/quiet</code></h2>
+<p>Use this URL to directly generate a JavaScript redirect to the results page.</p>
+<h4>GET parameters</h4>
+<p><b><code>q</code> :</b> Request to make. You can replace spaces with <code>+</code> if needed<br>
+<b><code>lang</code> :</b> Language identifier to use for search, one of the languages available for the client.<br>
+<b><code>region</code> :</b> Country identifier to use for search, one of the countries available for the client.</p>
+<h2><code>/api/search</code></h2>
+<p>Use this URL to generate the target URL for a regular search.</p>
+<h4>GET parameters</h4>
+<p><b><code>q</code> :</b> Request to make. You can replace spaces with <code>+</code> if needed<br>
+<b><code>lang</code> :</b> Language identifier to use for search, one of the languages available for the client.<br>
+<b><code>region</code> :</b> Country identifier to use for search, one of the countries available for the client.</p>
+<h2><code>/api/search-corp</code></h2>
+<p>Use this URL to generate the target URL for an Enterprise search.</p>
+<h4>GET parameters</h4>
+<p><b><code>q</code> :</b> Request to make. You can replace spaces with <code>+</code> if needed<br>
+<b><code>lang</code> :</b> Language identifier to use for search, one of the languages available for the client.<br>
+<b><code>region</code> :</b> Country identifier to use for search, one of the countries available for the client.</p>
+<h2><code>/api/suggestions</code></h2>
+<p>Use this URL to search suggestions corresponding to a search term. It's the only API feature to use JSON because the result needs to be handled by the client.</p>
+<h4>GET parameters</h4>
+<p><b><code>q</code> :</b> Keyword to search for in the suggestions database<br>
+<b><code>mode</code> :</b> Suggestions database (<code>search</code> or <code>corps</code>) to search in<br>
+<b><code>limit</code> :</b> Max output keywords (more there are, more time it will take), default is 5</p>
+<h1>Terms of service</h1>
+<p>ToS that applies to BetterSearch:cloud are the same as BetterSearch, but you'll need to credit BetterSearch:cloud usage (at least in your <b>client</b> code).</p>
+<p>If you're someone nice that want to support the project, you may credit BetterSearch on the website homepage, the search bar, or legal notices. You aren't forced to credit BetterSearch in the user interface for now, but you <b>need to</b> credit BetterSearch in your client code.</p>
+<p><b>Notice:</b> This paragraph may change in the future, check it regularly if you're concernated by it. If you have questions about usage rights for BetterSearch:cloud, email <b>minteck.projects+rights@gmail.com</b>. We usually answer before 7 days...</p>

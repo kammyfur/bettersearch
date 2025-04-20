@@ -1,0 +1,98 @@
+body, html {
+    background-color: #353535 !important;
+    color: whitesmoke;
+}
+
+[logo=""], [header_logo=""], #logo {
+    filter: saturate(50%) brightness(250%);
+}
+
+[apps=""] {
+    filter: invert(85%);
+}
+
+[apps=""]:hover {
+    filter: invert(60%);
+}
+
+[searchbar=""], [header_search=""] {
+    border-color: #5cf7ff;
+    background: transparent;
+    color: whitesmoke;
+}
+
+[searchbar=""]:hover, [header_search=""]:hover {
+    box-shadow: 1px 1px 2px #5cf7ff;
+}
+
+[button=""] {
+    border-color: #2f2f2f;
+    background: #4a4a4a;
+    color: whitesmoke;
+}
+
+[button=""]:hover {
+    box-shadow: 1px 1px 2px #2f2f2f;
+}
+
+a:hover {
+    color: rgb(221, 221, 221);
+}
+
+a:active {
+    color: rgb(187, 187, 187);
+}
+
+[etitle=""] {
+    color: #acacff;
+}
+
+[navigation=""] {
+    background: rgb(30, 30, 30);
+}
+
+[region=""] {
+    border-bottom-color: #3e3e3e;
+}
+
+[header=""] {
+    background: #242424;
+    box-shadow: 1px 1px 10px #262626;
+}
+
+[translation-indicator=""] {
+    filter: invert(95%);
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(70, 70, 70);
+    -webkit-transition: .2s;
+    transition: .2s;
+    vertical-align: middle;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgb(53, 53, 53);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+input:checked + .slider {
+    background-color: rgb(33, 243, 156);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(33, 243, 156);
+}
